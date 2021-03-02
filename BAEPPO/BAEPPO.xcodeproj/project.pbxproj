@@ -11,7 +11,6 @@
 		8B6D0C8A6C91C584F696C99A /* Pods_BAEPPOTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 676C3276AE10938FFFF89A45 /* Pods_BAEPPOTests.framework */; };
 		8F332C61BD2BAF52D91DEDF8 /* Pods_BAEPPO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B427501F30CADCD3701EFDC /* Pods_BAEPPO.framework */; };
 		CE05447625E5D009009D6FB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05447525E5D009009D6FB3 /* AppDelegate.swift */; };
-		CE05447A25E5D009009D6FB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05447925E5D009009D6FB3 /* ViewController.swift */; };
 		CE05447D25E5D009009D6FB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE05447B25E5D009009D6FB3 /* Main.storyboard */; };
 		CE05447F25E5D00B009D6FB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE05447E25E5D00B009D6FB3 /* Assets.xcassets */; };
 		CE05448225E5D00B009D6FB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE05448025E5D00B009D6FB3 /* LaunchScreen.storyboard */; };
@@ -32,6 +31,9 @@
 		CE05452D25E5D9E1009D6FB3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05452C25E5D9E1009D6FB3 /* Extension.swift */; };
 		CE05453225E5D9ED009D6FB3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05453125E5D9ED009D6FB3 /* Network.swift */; };
 		CE05453725E5D9F6009D6FB3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05453625E5D9F6009D6FB3 /* Model.swift */; };
+		CE23F63525EED262000C1C2B /* CustomSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23F63425EED262000C1C2B /* CustomSearchView.swift */; };
+		CE23F63A25EED28E000C1C2B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23F63925EED28E000C1C2B /* MyPage.storyboard */; };
+		CE23F64225EED3C1000C1C2B /* CustomSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */; };
 		CE836A1E25E9DAFD0038D2AB /* ReviewListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE836A1D25E9DAFD0038D2AB /* ReviewListTableViewCell.swift */; };
 		CE951F7125E9D4E0006956A5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE951F7025E9D4E0006956A5 /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -64,7 +66,6 @@
 		B2835A75F7290C5A2583CB3C /* Pods-BAEPPO-BAEPPOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAEPPO-BAEPPOUITests.debug.xcconfig"; path = "Target Support Files/Pods-BAEPPO-BAEPPOUITests/Pods-BAEPPO-BAEPPOUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CE05447225E5D009009D6FB3 /* BAEPPO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BAEPPO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE05447525E5D009009D6FB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE05447925E5D009009D6FB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE05447C25E5D009009D6FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE05447E25E5D00B009D6FB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE05448125E5D00B009D6FB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +91,9 @@
 		CE05452C25E5D9E1009D6FB3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CE05453125E5D9ED009D6FB3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		CE05453625E5D9F6009D6FB3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CE23F63425EED262000C1C2B /* CustomSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchView.swift; sourceTree = "<group>"; };
+		CE23F63925EED28E000C1C2B /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearchView.xib; sourceTree = "<group>"; };
 		CE836A1D25E9DAFD0038D2AB /* ReviewListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListTableViewCell.swift; sourceTree = "<group>"; };
 		CE951F7025E9D4E0006956A5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		F6FA8CEC688A3A327DF91E4E /* Pods-BAEPPO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAEPPO.debug.xcconfig"; path = "Target Support Files/Pods-BAEPPO/Pods-BAEPPO.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,8 +186,8 @@
 				CE0544BA25E5D40B009D6FB3 /* Search */,
 				CE0544B925E5D3EB009D6FB3 /* SignUp */,
 				CE0544B825E5D3E3009D6FB3 /* Login */,
+				CE23F63025EED220000C1C2B /* CustomView */,
 				CE05447525E5D009009D6FB3 /* AppDelegate.swift */,
-				CE05447925E5D009009D6FB3 /* ViewController.swift */,
 				CE05447B25E5D009009D6FB3 /* Main.storyboard */,
 			);
 			path = BAEPPO;
@@ -296,6 +300,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CE23F63025EED220000C1C2B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				CE23F63425EED262000C1C2B /* CustomSearchView.swift */,
+				CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		CE836A1B25E9D92C0038D2AB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +329,7 @@
 			isa = PBXGroup;
 			children = (
 				CE951F7025E9D4E0006956A5 /* MyPageViewController.swift */,
+				CE23F63925EED28E000C1C2B /* MyPage.storyboard */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -429,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE05451B25E5D826009D6FB3 /* Create.storyboard in Resources */,
+				CE23F63A25EED28E000C1C2B /* MyPage.storyboard in Resources */,
 				CE05450225E5D7C5009D6FB3 /* Login.storyboard in Resources */,
 				CE05451125E5D803009D6FB3 /* Map.storyboard in Resources */,
 				CE05448225E5D00B009D6FB3 /* LaunchScreen.storyboard in Resources */,
@@ -436,6 +451,7 @@
 				CE05447F25E5D00B009D6FB3 /* Assets.xcassets in Resources */,
 				CE05447D25E5D009009D6FB3 /* Main.storyboard in Resources */,
 				CE05450C25E5D7FB009D6FB3 /* Search.storyboard in Resources */,
+				CE23F64225EED3C1000C1C2B /* CustomSearchView.xib in Resources */,
 				CE05450725E5D7F0009D6FB3 /* SignUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,11 +584,11 @@
 				CE05453225E5D9ED009D6FB3 /* Network.swift in Sources */,
 				CE0544F325E5D77A009D6FB3 /* SearchViewController.swift in Sources */,
 				CE836A1E25E9DAFD0038D2AB /* ReviewListTableViewCell.swift in Sources */,
-				CE05447A25E5D009009D6FB3 /* ViewController.swift in Sources */,
 				CE05452D25E5D9E1009D6FB3 /* Extension.swift in Sources */,
 				CE05453725E5D9F6009D6FB3 /* Model.swift in Sources */,
 				CE951F7125E9D4E0006956A5 /* MyPageViewController.swift in Sources */,
 				CE0544D725E5D6A1009D6FB3 /* ReviewListViewController.swift in Sources */,
+				CE23F63525EED262000C1C2B /* CustomSearchView.swift in Sources */,
 				CE0544F825E5D791009D6FB3 /* SignUpViewController.swift in Sources */,
 				CE05447625E5D009009D6FB3 /* AppDelegate.swift in Sources */,
 				CE0544FD25E5D7A8009D6FB3 /* LoginViewController.swift in Sources */,
