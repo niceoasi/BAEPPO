@@ -31,6 +31,8 @@
 		CE05452D25E5D9E1009D6FB3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05452C25E5D9E1009D6FB3 /* Extension.swift */; };
 		CE05453225E5D9ED009D6FB3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05453125E5D9ED009D6FB3 /* Network.swift */; };
 		CE05453725E5D9F6009D6FB3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05453625E5D9F6009D6FB3 /* Model.swift */; };
+		CE13F95C25F019E600F58975 /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13F95B25F019E600F58975 /* MyPageTableViewCell.swift */; };
+		CE13F96825F01A7700F58975 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13F96725F01A7700F58975 /* Nameable.swift */; };
 		CE23F63525EED262000C1C2B /* CustomSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23F63425EED262000C1C2B /* CustomSearchView.swift */; };
 		CE23F63A25EED28E000C1C2B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23F63925EED28E000C1C2B /* MyPage.storyboard */; };
 		CE23F64225EED3C1000C1C2B /* CustomSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */; };
@@ -91,6 +93,8 @@
 		CE05452C25E5D9E1009D6FB3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		CE05453125E5D9ED009D6FB3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		CE05453625E5D9F6009D6FB3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CE13F95B25F019E600F58975 /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
+		CE13F96725F01A7700F58975 /* Nameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
 		CE23F63425EED262000C1C2B /* CustomSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchView.swift; sourceTree = "<group>"; };
 		CE23F63925EED28E000C1C2B /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearchView.xib; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				CE0544BB25E5D41A009D6FB3 /* Resource */,
+				CE13F96325F01A0A00F58975 /* Util */,
 				CE05452A25E5D98A009D6FB3 /* Extension */,
 				CE05452925E5D976009D6FB3 /* Network */,
 				CE05452B25E5D9CF009D6FB3 /* Model */,
@@ -300,6 +305,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		CE13F95925F019CA00F58975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE13F95A25F019D100F58975 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE13F95A25F019D100F58975 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE13F95B25F019E600F58975 /* MyPageTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE13F96325F01A0A00F58975 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				CE13F96725F01A7700F58975 /* Nameable.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		CE23F63025EED220000C1C2B /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +357,7 @@
 		CE951F6F25E9D4C8006956A5 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				CE13F95925F019CA00F58975 /* View */,
 				CE951F7025E9D4E0006956A5 /* MyPageViewController.swift */,
 				CE23F63925EED28E000C1C2B /* MyPage.storyboard */,
 			);
@@ -580,6 +610,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE13F95C25F019E600F58975 /* MyPageTableViewCell.swift in Sources */,
+				CE13F96825F01A7700F58975 /* Nameable.swift in Sources */,
 				CE0544E425E5D6FC009D6FB3 /* CreateViewController.swift in Sources */,
 				CE05453225E5D9ED009D6FB3 /* Network.swift in Sources */,
 				CE0544F325E5D77A009D6FB3 /* SearchViewController.swift in Sources */,

@@ -7,6 +7,5 @@
 
 import UIKit
 
-class ReviewListTableViewCell: UITableViewCell {
-    static let identifier = String(describing: self)
+class ReviewListTableViewCell: UITableViewCell, Nameable {
 }
