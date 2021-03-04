@@ -18,7 +18,6 @@ class MyPageViewController: UIViewController {
         self.tableView.delegate = self
     }
 
-
     @IBOutlet private weak var tableView: UITableView!
 
 }
