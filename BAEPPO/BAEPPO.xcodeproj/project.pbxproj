@@ -36,6 +36,10 @@
 		CE23F63525EED262000C1C2B /* CustomSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23F63425EED262000C1C2B /* CustomSearchView.swift */; };
 		CE23F63A25EED28E000C1C2B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23F63925EED28E000C1C2B /* MyPage.storyboard */; };
 		CE23F64225EED3C1000C1C2B /* CustomSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */; };
+		CE2E5E7825F2C40F0025955E /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5E7725F2C40F0025955E /* UserAPI.swift */; };
+		CE2E5E7D25F2C4610025955E /* MapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5E7C25F2C4610025955E /* MapAPI.swift */; };
+		CE2E5E8225F2C4940025955E /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5E8125F2C4940025955E /* SearchAPI.swift */; };
+		CE2E5E8725F2C4AA0025955E /* ReviewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E5E8625F2C4AA0025955E /* ReviewAPI.swift */; };
 		CE836A1E25E9DAFD0038D2AB /* ReviewListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE836A1D25E9DAFD0038D2AB /* ReviewListTableViewCell.swift */; };
 		CE951F7125E9D4E0006956A5 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE951F7025E9D4E0006956A5 /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
@@ -98,6 +102,10 @@
 		CE23F63425EED262000C1C2B /* CustomSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchView.swift; sourceTree = "<group>"; };
 		CE23F63925EED28E000C1C2B /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearchView.xib; sourceTree = "<group>"; };
+		CE2E5E7725F2C40F0025955E /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
+		CE2E5E7C25F2C4610025955E /* MapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAPI.swift; sourceTree = "<group>"; };
+		CE2E5E8125F2C4940025955E /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		CE2E5E8625F2C4AA0025955E /* ReviewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewAPI.swift; sourceTree = "<group>"; };
 		CE836A1D25E9DAFD0038D2AB /* ReviewListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListTableViewCell.swift; sourceTree = "<group>"; };
 		CE951F7025E9D4E0006956A5 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		F6FA8CEC688A3A327DF91E4E /* Pods-BAEPPO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BAEPPO.debug.xcconfig"; path = "Target Support Files/Pods-BAEPPO/Pods-BAEPPO.debug.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +293,10 @@
 			isa = PBXGroup;
 			children = (
 				CE05453125E5D9ED009D6FB3 /* Network.swift */,
+				CE2E5E7725F2C40F0025955E /* UserAPI.swift */,
+				CE2E5E7C25F2C4610025955E /* MapAPI.swift */,
+				CE2E5E8125F2C4940025955E /* SearchAPI.swift */,
+				CE2E5E8625F2C4AA0025955E /* ReviewAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -611,16 +623,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE13F95C25F019E600F58975 /* MyPageTableViewCell.swift in Sources */,
+				CE2E5E7825F2C40F0025955E /* UserAPI.swift in Sources */,
 				CE13F96825F01A7700F58975 /* Nameable.swift in Sources */,
 				CE0544E425E5D6FC009D6FB3 /* CreateViewController.swift in Sources */,
 				CE05453225E5D9ED009D6FB3 /* Network.swift in Sources */,
 				CE0544F325E5D77A009D6FB3 /* SearchViewController.swift in Sources */,
 				CE836A1E25E9DAFD0038D2AB /* ReviewListTableViewCell.swift in Sources */,
 				CE05452D25E5D9E1009D6FB3 /* Extension.swift in Sources */,
+				CE2E5E8725F2C4AA0025955E /* ReviewAPI.swift in Sources */,
+				CE2E5E8225F2C4940025955E /* SearchAPI.swift in Sources */,
 				CE05453725E5D9F6009D6FB3 /* Model.swift in Sources */,
 				CE951F7125E9D4E0006956A5 /* MyPageViewController.swift in Sources */,
 				CE0544D725E5D6A1009D6FB3 /* ReviewListViewController.swift in Sources */,
 				CE23F63525EED262000C1C2B /* CustomSearchView.swift in Sources */,
+				CE2E5E7D25F2C4610025955E /* MapAPI.swift in Sources */,
 				CE0544F825E5D791009D6FB3 /* SignUpViewController.swift in Sources */,
 				CE05447625E5D009009D6FB3 /* AppDelegate.swift in Sources */,
 				CE0544FD25E5D7A8009D6FB3 /* LoginViewController.swift in Sources */,

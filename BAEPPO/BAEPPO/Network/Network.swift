@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import Moya
+
+struct Network {
+
+    static let baseURL = "http://15.164.247.231:8080"
+
+}
