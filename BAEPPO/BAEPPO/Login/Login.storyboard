@@ -12,17 +12,125 @@
         <!--Login View Controller-->
         <scene sceneID="j6Y-uw-IAj">
             <objects>
-                <viewController id="xUb-Yc-0GW" customClass="LoginViewController" customModule="BAEPPO" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="xUb-Yc-0GW" customClass="LoginViewController" customModule="BAEPPO" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nq3-VZ-zws">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fli-Ud-36z">
+                                <rect key="frame" x="177" y="134" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FJZ-VU-dpr"/>
+                                    <constraint firstAttribute="width" constant="60" id="cdK-b1-3zG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="255" placeholderIntrinsicHeight="31" translatesAutoresizingMaskIntoConstraints="NO" id="liI-25-eLn">
+                                <rect key="frame" x="79.5" y="216" width="255" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="ySk-pn-qeb"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="아이디" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZsE-j3-GAp">
+                                <rect key="frame" x="36" y="317" width="342" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="CZv-dt-0aY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="drO-5X-Zdp">
+                                <rect key="frame" x="36" y="380" width="342" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8gT-jX-8wD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1j-Cl-VnL">
+                                <rect key="frame" x="36" y="443" width="342" height="48"/>
+                                <color key="backgroundColor" red="0.41960784313725491" green="0.21568627450980393" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="kXO-Ki-bmD"/>
+                                </constraints>
+                                <state key="normal" title="로그인하기">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapLoginButton:" destination="xUb-Yc-0GW" eventType="touchUpInside" id="YKY-dw-pV5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaE-6d-EOW">
+                                <rect key="frame" x="168.5" y="599" width="77" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="입담 회원가입">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tzE-Wp-7mZ" kind="presentation" id="9hf-zS-GRP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6W-Bo-ctZ">
+                                <rect key="frame" x="106.5" y="570" width="201" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="아이디 혹은 비밀번호를 잊으셨나요?">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bKM-NR-Nes" kind="show" id="0hI-he-Z4N"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="U65-An-Fgf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JaE-6d-EOW" firstAttribute="top" secondItem="B6W-Bo-ctZ" secondAttribute="bottom" id="3v0-xR-Nka"/>
+                            <constraint firstItem="ZsE-j3-GAp" firstAttribute="top" secondItem="liI-25-eLn" secondAttribute="bottom" constant="70" id="8QI-8C-geX"/>
+                            <constraint firstItem="liI-25-eLn" firstAttribute="top" secondItem="Fli-Ud-36z" secondAttribute="bottom" constant="22" id="9O7-zN-42p"/>
+                            <constraint firstItem="Fli-Ud-36z" firstAttribute="centerX" secondItem="nq3-VZ-zws" secondAttribute="centerX" id="Ad6-vH-fnc"/>
+                            <constraint firstItem="U65-An-Fgf" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JaE-6d-EOW" secondAttribute="bottom" constant="20" id="Bjx-LN-FqW"/>
+                            <constraint firstItem="B6W-Bo-ctZ" firstAttribute="top" secondItem="t1j-Cl-VnL" secondAttribute="bottom" constant="79" id="DRo-U1-53G"/>
+                            <constraint firstItem="Fli-Ud-36z" firstAttribute="top" secondItem="U65-An-Fgf" secondAttribute="top" constant="90" id="FUL-CM-ko4"/>
+                            <constraint firstItem="t1j-Cl-VnL" firstAttribute="top" secondItem="drO-5X-Zdp" secondAttribute="bottom" constant="15" id="G8M-OS-eGQ"/>
+                            <constraint firstItem="t1j-Cl-VnL" firstAttribute="leading" secondItem="ZsE-j3-GAp" secondAttribute="leading" id="H1f-Xn-bbE"/>
+                            <constraint firstItem="drO-5X-Zdp" firstAttribute="trailing" secondItem="ZsE-j3-GAp" secondAttribute="trailing" id="SGN-QE-Apa"/>
+                            <constraint firstItem="JaE-6d-EOW" firstAttribute="centerX" secondItem="nq3-VZ-zws" secondAttribute="centerX" id="cOu-I7-ZXH"/>
+                            <constraint firstItem="U65-An-Fgf" firstAttribute="trailing" secondItem="ZsE-j3-GAp" secondAttribute="trailing" constant="36" id="e0r-4H-7yc"/>
+                            <constraint firstItem="B6W-Bo-ctZ" firstAttribute="centerX" secondItem="JaE-6d-EOW" secondAttribute="centerX" id="mgk-2Z-O9N"/>
+                            <constraint firstItem="liI-25-eLn" firstAttribute="centerX" secondItem="nq3-VZ-zws" secondAttribute="centerX" id="n2W-ax-NaT"/>
+                            <constraint firstItem="drO-5X-Zdp" firstAttribute="leading" secondItem="ZsE-j3-GAp" secondAttribute="leading" id="oMI-sp-XTN"/>
+                            <constraint firstItem="t1j-Cl-VnL" firstAttribute="trailing" secondItem="ZsE-j3-GAp" secondAttribute="trailing" id="p03-va-eRg"/>
+                            <constraint firstItem="ZsE-j3-GAp" firstAttribute="leading" secondItem="U65-An-Fgf" secondAttribute="leading" constant="36" id="qAH-v5-KHn"/>
+                            <constraint firstItem="drO-5X-Zdp" firstAttribute="top" secondItem="ZsE-j3-GAp" secondAttribute="bottom" constant="15" id="s8k-bY-yQg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idTextField" destination="ZsE-j3-GAp" id="qZc-ez-zeX"/>
+                        <outlet property="passwordTextField" destination="drO-5X-Zdp" id="TL3-6N-Lcv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgr-tp-6cC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="333" y="194"/>
+        </scene>
+        <!--ForgotPassword-->
+        <scene sceneID="fOZ-Z4-wL4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ForgotPassword" id="bKM-NR-Nes" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Wj7-QH-Wx9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEy-Kt-jMB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="647"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="kWM-vh-Sgz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="tzE-Wp-7mZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="73i-UM-H4u"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUB-Zn-c49" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="423" y="647"/>
         </scene>
     </scenes>
     <resources>

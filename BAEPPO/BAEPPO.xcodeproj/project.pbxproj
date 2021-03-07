@@ -33,6 +33,8 @@
 		CE05453725E5D9F6009D6FB3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE05453625E5D9F6009D6FB3 /* Model.swift */; };
 		CE13F95C25F019E600F58975 /* MyPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13F95B25F019E600F58975 /* MyPageTableViewCell.swift */; };
 		CE13F96825F01A7700F58975 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE13F96725F01A7700F58975 /* Nameable.swift */; };
+		CE1A89EE25F543BA007108D0 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1A89ED25F543BA007108D0 /* ForgotPasswordViewController.swift */; };
+		CE1A89F325F543D6007108D0 /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE1A89F225F543D6007108D0 /* ForgotPassword.storyboard */; };
 		CE23F63525EED262000C1C2B /* CustomSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23F63425EED262000C1C2B /* CustomSearchView.swift */; };
 		CE23F63A25EED28E000C1C2B /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE23F63925EED28E000C1C2B /* MyPage.storyboard */; };
 		CE23F64225EED3C1000C1C2B /* CustomSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */; };
@@ -99,6 +101,8 @@
 		CE05453625E5D9F6009D6FB3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CE13F95B25F019E600F58975 /* MyPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTableViewCell.swift; sourceTree = "<group>"; };
 		CE13F96725F01A7700F58975 /* Nameable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
+		CE1A89ED25F543BA007108D0 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		CE1A89F225F543D6007108D0 /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		CE23F63425EED262000C1C2B /* CustomSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchView.swift; sourceTree = "<group>"; };
 		CE23F63925EED28E000C1C2B /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
 		CE23F64125EED3C1000C1C2B /* CustomSearchView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomSearchView.xib; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 			children = (
 				CE0544FC25E5D7A8009D6FB3 /* LoginViewController.swift */,
 				CE05450125E5D7C5009D6FB3 /* Login.storyboard */,
+				CE1A89ED25F543BA007108D0 /* ForgotPasswordViewController.swift */,
+				CE1A89F225F543D6007108D0 /* ForgotPassword.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -488,6 +494,7 @@
 				CE23F63A25EED28E000C1C2B /* MyPage.storyboard in Resources */,
 				CE05450225E5D7C5009D6FB3 /* Login.storyboard in Resources */,
 				CE05451125E5D803009D6FB3 /* Map.storyboard in Resources */,
+				CE1A89F325F543D6007108D0 /* ForgotPassword.storyboard in Resources */,
 				CE05448225E5D00B009D6FB3 /* LaunchScreen.storyboard in Resources */,
 				CE05452525E5D83E009D6FB3 /* ReviewList.storyboard in Resources */,
 				CE05447F25E5D00B009D6FB3 /* Assets.xcassets in Resources */,
@@ -638,6 +645,7 @@
 				CE23F63525EED262000C1C2B /* CustomSearchView.swift in Sources */,
 				CE2E5E7D25F2C4610025955E /* MapAPI.swift in Sources */,
 				CE0544F825E5D791009D6FB3 /* SignUpViewController.swift in Sources */,
+				CE1A89EE25F543BA007108D0 /* ForgotPasswordViewController.swift in Sources */,
 				CE05447625E5D009009D6FB3 /* AppDelegate.swift in Sources */,
 				CE0544FD25E5D7A8009D6FB3 /* LoginViewController.swift in Sources */,
 				CE0544EE25E5D762009D6FB3 /* MapViewController.swift in Sources */,
