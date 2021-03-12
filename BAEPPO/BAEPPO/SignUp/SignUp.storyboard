@@ -16,9 +16,143 @@
                     <view key="view" contentMode="scaleToFill" id="2wu-BM-lZ7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cve-Bu-EsM">
+                                <rect key="frame" x="23" y="62" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="5Os-Fn-iAw"/>
+                                    <constraint firstAttribute="height" constant="24" id="igB-KJ-deX"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didTapCloseButton:" destination="vWg-an-LoX" eventType="touchUpInside" id="Ej1-CK-Cow"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="회원가입" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXn-Fx-sPb">
+                                <rect key="frame" x="172.5" y="62" width="69.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VEK-Rh-6fi">
+                                <rect key="frame" x="18" y="303" width="378" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 확인" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-I4-UeX">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀 번호 확인을 위해 한번 더 입력해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vim-x0-GsV">
+                                        <rect key="frame" x="0.0" y="25" width="378" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="zoU-kM-u5r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CP5-kd-Ifc">
+                                <rect key="frame" x="18" y="206" width="378" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T6G-Ln-xFe">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6~20자 영문, 숫자, 특수문자를 조합해주세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BDJ-c8-fxq">
+                                        <rect key="frame" x="0.0" y="25" width="378" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="3Eh-OE-NKM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oge-J9-b1k">
+                                <rect key="frame" x="18" y="400" width="378" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학교설정" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPt-xE-hCK">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="재학중인 학교를 선택해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s1Q-BM-z7O">
+                                        <rect key="frame" x="0.0" y="25" width="378" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Dpc-Zn-jkX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="p8i-QL-q7O">
+                                <rect key="frame" x="18" y="109" width="378" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNp-GF-TJe">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6~12자 영문, 숫자 조합하여 만들어주세요. " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UHY-IT-u62">
+                                        <rect key="frame" x="0.0" y="25" width="378" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="poi-ks-gsW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etf-nd-bfg">
+                                <rect key="frame" x="18" y="516" width="378" height="48"/>
+                                <color key="backgroundColor" red="0.41960784313725491" green="0.21568627450980393" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="bz6-vo-vku"/>
+                                </constraints>
+                                <state key="normal" title="회원가입하기">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapConfirmButton:" destination="vWg-an-LoX" eventType="touchUpInside" id="hT4-fX-vfQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="K4w-Gf-gfA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VEK-Rh-6fi" firstAttribute="trailing" secondItem="CP5-kd-Ifc" secondAttribute="trailing" id="4fb-qg-bx0"/>
+                            <constraint firstItem="K4w-Gf-gfA" firstAttribute="trailing" secondItem="p8i-QL-q7O" secondAttribute="trailing" constant="18" id="86k-uX-W50"/>
+                            <constraint firstItem="p8i-QL-q7O" firstAttribute="leading" secondItem="K4w-Gf-gfA" secondAttribute="leading" constant="18" id="8Cg-2g-zn6"/>
+                            <constraint firstItem="oge-J9-b1k" firstAttribute="trailing" secondItem="VEK-Rh-6fi" secondAttribute="trailing" id="Hci-ha-BhQ"/>
+                            <constraint firstItem="etf-nd-bfg" firstAttribute="trailing" secondItem="oge-J9-b1k" secondAttribute="trailing" id="M2G-83-OQV"/>
+                            <constraint firstItem="etf-nd-bfg" firstAttribute="top" secondItem="oge-J9-b1k" secondAttribute="bottom" constant="43" id="OlB-Di-auS"/>
+                            <constraint firstItem="cve-Bu-EsM" firstAttribute="top" secondItem="K4w-Gf-gfA" secondAttribute="top" constant="18" id="RhG-Ou-u05"/>
+                            <constraint firstItem="etf-nd-bfg" firstAttribute="leading" secondItem="oge-J9-b1k" secondAttribute="leading" id="UgP-1f-4Ct"/>
+                            <constraint firstItem="cve-Bu-EsM" firstAttribute="leading" secondItem="K4w-Gf-gfA" secondAttribute="leading" constant="23" id="a3Y-zZ-0zf"/>
+                            <constraint firstItem="CP5-kd-Ifc" firstAttribute="top" secondItem="p8i-QL-q7O" secondAttribute="bottom" constant="24" id="bm4-Yl-tc2"/>
+                            <constraint firstItem="oge-J9-b1k" firstAttribute="top" secondItem="VEK-Rh-6fi" secondAttribute="bottom" constant="24" id="cN9-nm-rXc"/>
+                            <constraint firstItem="TXn-Fx-sPb" firstAttribute="centerX" secondItem="2wu-BM-lZ7" secondAttribute="centerX" id="fjw-Jp-Ndl"/>
+                            <constraint firstItem="TXn-Fx-sPb" firstAttribute="centerY" secondItem="cve-Bu-EsM" secondAttribute="centerY" id="lkQ-mV-fnO"/>
+                            <constraint firstItem="oge-J9-b1k" firstAttribute="leading" secondItem="VEK-Rh-6fi" secondAttribute="leading" id="tPV-IE-XFd"/>
+                            <constraint firstItem="CP5-kd-Ifc" firstAttribute="leading" secondItem="p8i-QL-q7O" secondAttribute="leading" id="vuj-0J-W9O"/>
+                            <constraint firstItem="CP5-kd-Ifc" firstAttribute="trailing" secondItem="p8i-QL-q7O" secondAttribute="trailing" id="wF2-Xw-hec"/>
+                            <constraint firstItem="p8i-QL-q7O" firstAttribute="top" secondItem="cve-Bu-EsM" secondAttribute="bottom" constant="23" id="wcZ-sa-3QJ"/>
+                            <constraint firstItem="VEK-Rh-6fi" firstAttribute="leading" secondItem="CP5-kd-Ifc" secondAttribute="leading" id="ybL-rA-MLr"/>
+                            <constraint firstItem="VEK-Rh-6fi" firstAttribute="top" secondItem="CP5-kd-Ifc" secondAttribute="bottom" constant="24" id="zZl-UU-3VI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="idTextField" destination="UHY-IT-u62" id="yiU-Il-aBT"/>
+                        <outlet property="passwordConfirmTextField" destination="vim-x0-GsV" id="V5i-m1-rxi"/>
+                        <outlet property="passwordTextField" destination="BDJ-c8-fxq" id="oDW-aU-rEI"/>
+                        <outlet property="universityTextField" destination="s1Q-BM-z7O" id="96K-Vm-aqx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OzP-6W-akQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
